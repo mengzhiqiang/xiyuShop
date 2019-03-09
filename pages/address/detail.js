@@ -11,8 +11,8 @@ Page({
     region: '',
     detail: {},
 
-    goodsAddress: '青海大学一号操场',    //取货点
-    schoolAddress: '青海大学',      //学校名
+    goods_address: '青海大学一号操场',    //取货点
+    school_id: '青海大学',      //学校名
     arrayTower: [
       '青海大学一号操场', '青海大学图书馆'
     ],

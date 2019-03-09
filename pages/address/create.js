@@ -13,8 +13,8 @@ Page({
     region: '青海省西宁市城中区',
     phone: '',
     detail: '青海大学',
-    goodsAddress:'青海大学一号操场',    //取货点
-    schoolAddress:'青海大学',      //学校名
+    goods_address:'青海大学一号操场',    //取货点
+    school_id:'青海大学',      //学校名
     buildingNumber:'', //宿舍楼
     roomNumber:'',     //门牌号
     arrayTower:[
@@ -42,7 +42,16 @@ Page({
       values = e.detail.value
     values.region = this.data.region;
     values.detail = this.data.detail;
-    console.log('======' + values.region);
+    values.school_id = this.data.school_id;
+    values.goods_address = this.data.goods_address;
+
+    console.log('==school_id====' + values.school_id);
+    console.log('==phone=====' + values.phone);
+    console.log('==goods_address====' + values.goods_address);
+    console.log('==name====' + values.name);
+    console.log('==detail===' + values.detail);
+    console.log('==region===' + values.region);
+
     // 记录formId
     // App.saveFormId(e.detail.formId);
 
@@ -92,7 +101,7 @@ Page({
       return false;
     }
 
-    if (!this.data.goodsAddress) {
+    if (!this.data.goods_address) {
       this.data.error = '取货点不能空';
       return false;
     }
@@ -121,7 +130,7 @@ Page({
   bindAddressChange: function(e){
     this.setData(
       {
-        goodsAddress: this.data.arrayTower[e.detail.value],
+        goods_address: this.data.arrayTower[e.detail.value],
       }
     )
   },

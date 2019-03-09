@@ -26,7 +26,7 @@
       <view class="address-cont-box flex-box">
       <picker bindchange="bindAddressChange" value="{{index}}" 
       range="{{arrayTower}}">
-          <text wx:if="goodsAddress" class="f-30">{{goodsAddress}}
+          <text wx:if="goods_address" class="f-30">{{goods_address}}
           </text>
           <text wx:else class="f-30 col-7">请选择取货地点</text>
       </picker>
@@ -39,7 +39,7 @@
           <text class="f-30">所在学校</text>
         </view>
          <view class="left-name flex-box color-address">
-          <text class="f-30">{{schoolAddress}}</text>
+          <text name="school_id" class="f-30">{{school_id}}</text>
         </view>
         <!-- <view class="address-cont-box flex-box"> -->
           <!-- <picker mode="region" bindchange="bindRegionChange">
