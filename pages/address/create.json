@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "收货人信息",
+    "usingComponents": {
+      "shortcut": "/components/shortcut/shortcut"
+    }
+}
